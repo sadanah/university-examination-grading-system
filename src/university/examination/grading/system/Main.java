@@ -23,7 +23,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.print("\nEnter the number of students to process: ");
+        System.out.print("\nEnter the number of student records to process: ");
         int stuCount = scanner.nextInt();
 
         while(stuCount > 0){

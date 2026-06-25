@@ -63,6 +63,8 @@ public abstract class Course {
     }
 
     public void displayDetails(){
+        System.out.println("\n=================================================");
+        System.out.println("Student Course Details:");
         System.out.println("Course Code: " + courseCode);
         System.out.println("Course Name: " + courseName);   
         System.out.println("Student Name: " + studentName);
@@ -70,5 +72,6 @@ public abstract class Course {
         System.out.println("Grade: " + grade);
         System.out.println("Performance Category: " + performanceCategory);
         System.out.println("Academic Status: " + academicStatus);
+        System.out.println("=================================================");
     }
 }
