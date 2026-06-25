@@ -53,6 +53,7 @@ public class Main {
             course.displayDetails();
             stuCount--;
         }
+        scanner.close();
     }
     
 }
