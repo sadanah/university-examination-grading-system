@@ -1,28 +1,24 @@
 package university.examination.grading.system;
 
 public class TheoryCourse extends Course {
-    private String grade;
+    private char grade;
 
-    public TheoryCourse(int courseCode, String courseName, String studentName, int marksObtained) {
-        super(courseCode, courseName, studentName, marksObtained);
+    public TheoryCourse(int courseCode, String courseName, String studentName, int marksObtained, char grade, String performanceCategory, String academicStatus) {
+        super(courseCode, courseName, studentName, marksObtained, grade, performanceCategory, academicStatus);
     }
 
     @Override
-    public void calculateGrade() {
+    public char calculateGrade(int marksObtained) {
         if (marksObtained >= 75) {
-            grade = "A";
+            grade = 'A';
         } else if (marksObtained >= 65) {
-            grade = "B";
+            grade = 'B';
         } else if (marksObtained >= 50) {
-            grade = "C";
+            grade = 'C';
         } else{
-            grade = "F";
+            grade = 'F';
         }
-    }
-    
-    @Override
-    public void displayDetails() {
-        super.displayDetails();
-        System.out.println("Grade: " + grade);
+
+        return grade;
     }
 }
